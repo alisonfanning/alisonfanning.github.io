@@ -1,0 +1,244 @@
+/*GLOBAL STYLES*/
+
+body {
+	font-family: Helvetica;
+	font-size: 16px;
+}
+
+.vertical-align-parent {
+	display: table;
+	width: 100%;
+}
+
+.vertical-align-child {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.header h2 {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 40px;
+	text-align: center;
+}
+
+
+/*LANDING STYLES*/
+
+.landing {
+	background: url(../images/landing.jpg) center no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: #CDD1D5;
+    padding: 20px;
+    height:100vh; 
+    position: relative;
+}
+
+.landing header {
+	position: relative;
+	z-index: 10;
+}
+
+.landing header .logo {
+	text-transform: uppercase;
+	color: #CDD1D5;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding-left: 20px;
+	margin: 0;
+	z-index: 11;
+	line-height: 50px;
+	font-size: 16px;
+}
+
+.landing nav {
+	text-align: right;
+	font-size: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: url(../images/footer.jpg);
+	height: 50px;
+	z-index: 10;
+	width: 100%;
+}
+
+.landing nav ul {
+	text-decoration: none;
+	list-style-type: none;
+	position: absolute;
+	top: 0px;
+	right: 40px;
+	margin: 0;
+}
+
+.landing li {
+	display: inline-block;
+	text-align: right;
+	padding: 10px;
+}
+
+.landing a {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.landing a:link {
+	color: #CDD1D5;
+}
+
+.landing a:visited {
+	color: #CDD1D5;
+}
+
+.landing a:hover {
+	color: #C6DABF;
+}
+
+.landing a:active {
+	color: #CDD1D5;
+}
+
+.landing .icon {
+	height: 60px;
+	width: 100%;
+	-webkit-transform: rotate(345deg);
+    -moz-transform: rotate(345deg);
+    -ms-transform: rotate(345deg);
+    -o-transform: rotate(345deg);
+    transform: rotate(345deg);
+	position: absolute;
+	top: 50%;
+}
+
+.landing .icon1 {
+	width: 60%;
+	height: 60px;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+}
+
+.landing .icon2 {
+	height: 60px;
+	width: 40%;
+	position: absolute;
+	left: 60%;
+	display: inline-block;
+}
+
+/*PORTFOLIO STYLES*/
+
+#portfolio {
+	text-align: center;
+	margin: 40px;
+	z-index: 9;
+}
+
+.project p {
+	margin-top: 0;
+}
+
+.project h3 {
+	text-transform: capitalize;
+	margin-bottom: 0;
+}
+
+.project a {
+	color: black;
+}
+
+.project img {
+	width: 100%;
+}
+
+.project .imgWrap {
+	position: relative;
+}
+
+.project .imgTitleWrap {
+	background: white;
+	opacity: .8;
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+	margin: 40px;
+	border-radius: 20px;
+
+}
+
+.project .imgWrap:hover img {
+	opacity: .7;
+}
+
+/*ABOUT STYLES*/
+
+#about {
+	width: 100%;
+	background: #d3d3d3;
+	color: black;
+	padding: 20px 20px 80px 20px;
+	line-height: 1.5;
+}
+
+#about .row {
+	text-align: center;
+	max-height: 250px;
+	margin-bottom: 80px;
+}
+
+#about img {
+	display: block;
+	margin: auto;
+	border-radius: 20px;
+	height: 250px;
+	width: 250px;
+}
+
+#about .button {
+	display: inline-block;
+	background-color: #FEFEFE;
+	border-radius: 12%;
+	color: black;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 15px;
+	text-transform: capitalize;
+	font-weight: bold;
+	margin: 20px;
+}
+
+#about .button:hover {
+	background-color: #C6DABF;
+}
+
+#about .contact {
+	text-align: center;
+}
+
+#about p {
+	margin-top: 0;
+	display: inline-block;
+	padding: 30px 0px 0px 30px;
+}
+
+#about .button a {
+	color: black;
+	text-decoration: none;
+}
+
+#about .bio {
+	display: inline-block;
+}
+
+#about .bioText {
+	display: inline-block;
+	max-width: 500px;
+	text-align: left;
+
+}

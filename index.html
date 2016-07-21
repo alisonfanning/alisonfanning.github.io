@@ -2,12 +2,127 @@
 <html>
 	<head>
 		<title>Alison Fanning</title>
-		<link href="styles.css" type="text/css" rel="stylesheet" />
+		<meta name="description" content="Alison Fanning's Portfolio">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/initialize.css">
+    	<link rel="stylesheet" type="text/css" href="css/grid.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	</head>
 	<body>
-		<div>
-		<img src="images/alisonfanning.jpg" title="Alison Fanning" alt="Alison Fanning">
-		<p>Hello! My name is Alison Fanning and I live in Somerville, MA. I've spent the past several years working at an ed-tech company in a variety of roles: implementation specialist, project manager, consultant, and team leader (sometimes all at the same time!). I'm excited to be a student at Startup Institute to help me transition to a career in web design. Outside of work I enjoy baking, playing board games, and exploring markets of any kind.</p>
-		</div>
+		<section class="landing">
+			<header class="vertical-align-parent">
+				<h4 class="logo"><a href="#">Alison Fanning</a></h4>
+				<nav>
+					<ul>
+						<li><a data-scroll href="#about">About</a></li>
+						<li><a data-scroll href="#portfolio">Portfolio</a></li>
+						<li><a href="docs/AFanningResume.pdf" target="_blank">Resume</a></li>
+					</ul>
+				</nav>
+			</header>
+          		<div class="icon">
+	          		<a href="mailto:alison.fanning@gmail.com">
+	          			<div class="icon1">
+	          			</div>
+	          		</a>
+	          		<a href="https://www.linkedin.com/in/alisonfanning" target="_blank">
+	          			<div class="icon2">
+	          			</div>
+	          		</a>
+          		</div>
+			
+		</section>
+		<section id="portfolio">
+			<div class="header">
+				<h2>Portfolio</h2>
+			</div>
+			<div class="row">
+				<div class="column one-half">
+					<div class="project">
+						<a href="#">
+							<div class="imgWrap">
+							
+								<img src="images/project_management.jpg">
+								<div class="imgTitleWrap">
+									<h3>Customer Project Implementation Process</h3>
+									<p>(Coming Soon)</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="column one-half">
+					<div class="project">
+						<a href="#">
+							<div class="imgWrap">
+								<img src="images/hapyak.png">
+								<div class="imgTitleWrap">
+									<h3>HapYak User Experience Feedback</h3>
+									<p>(Coming Soon)</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column one-half">
+					<div class="project">
+						<a href="#">
+							<div class="imgWrap">
+								<img src="images/school.jpg">
+								<div class="imgTitleWrap">
+									<h3>School Choice Product Development</h3>
+									<p>(Coming Soon)</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="column one-half">
+					<div class="project">
+						<a href="#">
+							<div class="imgWrap">
+								<img src="images/food_delivery.jpg">
+								<div class="imgTitleWrap">
+									<h3>Food Delivery App</h3>
+									<p>(Coming Soon)</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<div class="header">
+				<h2>About Me</h2>
+			</div>
+			<div class="row">
+				<div class="bio">
+					<img  src="images/alisonfanning.jpg" title="Alison Fanning" alt="Alison Fanning">
+				</div>
+				<div class="bioText">
+					<p>I'm a UX Designer based in Boston, MA. I have experience working in ed-tech and nonprofits. Whether I'm working with another department or a customer, I enjoy uncovering the business need or objective behind a request and designing from there. My focus is on creating intuitive workflows that give users the best experience possible.</p>
+					<div class="contact">
+						<button class="button"><a href="mailto:alison.fanning@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>     Send me an Email</a></button>
+						<button class="button"><a href="https://www.linkedin.com/in/alisonfanning"><i class="fa fa-linkedin-square" aria-hidden="true"></i>     Connect on LinkedIn</a></button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.0.0/js/smooth-scroll.js"></script>
+      <script>
+        smoothScroll.init({
+          selector: '[data-scroll]', // Selector for links (must be a valid CSS selector)
+          selectorHeader: '[data-scroll-header]', // Selector for fixed headers (must be a valid CSS selector)
+          speed: 2000, // Integer. How fast to complete the scroll in milliseconds
+          easing: 'easeInOutCubic', // Easing pattern to use
+          offset: 60, // Integer. How far to offset the scrolling anchor location in pixels
+          updateURL: true, // Boolean. If true, update the URL hash on scroll
+          callback: function ( anchor, toggle ) {} // Function to run after scrolling
+      });
+      </script>
 	</body>
 </html>
