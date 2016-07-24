@@ -24,10 +24,38 @@ body {
 	text-align: center;
 }
 
+.contact {
+	text-align: center;
+}
 
+.contact .button {
+	display: inline-block;
+	background-color: #FEFEFE;
+	border-radius: 12%;
+	color: black;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 15px;
+	text-transform: capitalize;
+	font-weight: bold;
+	margin: 20px;
+	border: 1px solid #6a6a6a;
+	box-shadow: 3px 3px 5px #6a6a6a;
+}
+
+.contact .button a {
+	color: black;
+	text-decoration: none;
+}
+
+.contact .button:hover {
+	box-shadow: 3px 3px 5px black;
+}
+
+/*HOMEPAGE*/
 /*LANDING STYLES*/
 
-.landing {
+#landing {
 	background: url(../images/landing.jpg) center no-repeat;
 	background-size: cover;
 	text-align: center;
@@ -37,12 +65,12 @@ body {
     position: relative;
 }
 
-.landing header {
+#landing header {
 	position: relative;
 	z-index: 10;
 }
 
-.landing header .logo {
+#landing header .logo {
 	text-transform: uppercase;
 	color: #CDD1D5;
 	position: fixed;
@@ -55,7 +83,7 @@ body {
 	font-size: 16px;
 }
 
-.landing nav {
+#landing nav {
 	text-align: right;
 	font-size: 20px;
 	position: fixed;
@@ -67,7 +95,7 @@ body {
 	width: 100%;
 }
 
-.landing nav ul {
+#landing nav ul {
 	text-decoration: none;
 	list-style-type: none;
 	position: absolute;
@@ -76,34 +104,34 @@ body {
 	margin: 0;
 }
 
-.landing li {
+#landing li {
 	display: inline-block;
 	text-align: right;
 	padding: 10px;
 }
 
-.landing a {
+#landing a {
 	text-decoration: none;
 	list-style-type: none;
 }
 
-.landing a:link {
+#landing a:link {
 	color: #CDD1D5;
 }
 
-.landing a:visited {
+#landing a:visited {
 	color: #CDD1D5;
 }
 
-.landing a:hover {
+#landing a:hover {
 	color: #C6DABF;
 }
 
-.landing a:active {
+#landing a:active {
 	color: #CDD1D5;
 }
 
-.landing .icon {
+#landing .icon {
 	height: 60px;
 	width: 100%;
 	-webkit-transform: rotate(345deg);
@@ -115,7 +143,7 @@ body {
 	top: 50%;
 }
 
-.landing .icon1 {
+#landing .icon1 {
 	width: 60%;
 	height: 60px;
 	display: inline-block;
@@ -123,7 +151,7 @@ body {
 	left: 0;
 }
 
-.landing .icon2 {
+#landing .icon2 {
 	height: 60px;
 	width: 40%;
 	position: absolute;
@@ -158,6 +186,7 @@ body {
 
 .project .imgWrap {
 	position: relative;
+	box-shadow: 4px 4px 5px #d3d3d3;
 }
 
 .project .imgTitleWrap {
@@ -169,11 +198,14 @@ body {
 	right: 0;
 	margin: 40px;
 	border-radius: 20px;
-
 }
 
 .project .imgWrap:hover img {
 	opacity: .7;
+}
+
+.project .imgWrap:hover .disabled {
+	opacity: 1;
 }
 
 /*ABOUT STYLES*/
@@ -200,45 +232,144 @@ body {
 	width: 250px;
 }
 
-#about .button {
-	display: inline-block;
-	background-color: #FEFEFE;
-	border-radius: 12%;
-	color: black;
-	padding: 10px 20px;
-	text-align: center;
-	font-size: 15px;
-	text-transform: capitalize;
-	font-weight: bold;
-	margin: 20px;
-}
-
-#about .button:hover {
-	background-color: #C6DABF;
-}
-
-#about .contact {
-	text-align: center;
-}
-
 #about p {
 	margin-top: 0;
 	display: inline-block;
 	padding: 30px 0px 0px 30px;
 }
 
-#about .button a {
-	color: black;
-	text-decoration: none;
-}
-
 #about .bio {
 	display: inline-block;
+	box-shadow: 3px 3px 5px #6a6a6a;
+	border-radius: 20px;
 }
 
 #about .bioText {
 	display: inline-block;
 	max-width: 500px;
 	text-align: left;
+}
 
+/*CASESTUDY PAGES*/
+/*BODY STYLES*/
+
+.projectPage {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 150px;
+	margin-top: 150px;
+}
+
+/*HEADER STYLES*/
+.projectPage header {
+	position: relative;
+	z-index: 10;
+}
+
+.projectPage header .logo {
+	text-transform: uppercase;
+	color: #CDD1D5;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding-left: 20px;
+	margin: 0;
+	z-index: 11;
+	line-height: 50px;
+	font-size: 16px;
+}
+
+.projectPage header nav {
+	text-align: right;
+	font-size: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: url(../images/footer.jpg);
+	height: 50px;
+	z-index: 10;
+	width: 100%;
+}
+
+.projectPage header nav ul {
+	text-decoration: none;
+	list-style-type: none;
+	position: absolute;
+	top: 0px;
+	right: 40px;
+	margin: 0;
+}
+
+.projectPage header li {
+	display: inline-block;
+	text-align: right;
+	padding: 10px;
+}
+
+.projectPage header a {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.projectPage header a:link {
+	color: #CDD1D5;
+}
+
+.projectPage header a:visited {
+	color: #CDD1D5;
+}
+
+.projectPage header a:hover {
+	color: #C6DABF;
+}
+
+.projectPage header a:active {
+	color: #CDD1D5;
+}
+
+/*SECTION STYLES*/
+.projectPage .projectPageTitle {
+	text-align: center;
+}
+
+.projectPage .projectPageTitle h1 {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.projectPage h2 {
+	margin-top: 60px;
+}
+
+.projectPage h3 {
+	margin-top: 40px;
+}
+
+.projectPage .title {
+	font-style: italic;
+}
+
+.projectPage .final {
+	margin-bottom: 60px;
+}
+
+.projectPage .personas,.email,.recent,.longterm,.reg {
+	width: 100%;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	border: 2px solid #d3d3d3;
+	box-shadow: 3px 3px 5px #d3d3d3;
+}
+
+/*REGISTRATION STYLES*/
+.projectPage .reg {
+	margin: 0;
+}
+
+/*FOOTER STYLES*/
+.projectPage footer {
+	text-align: center;
+}
+.projectPage footer h2 {
+	margin-top: 60px;
 }
