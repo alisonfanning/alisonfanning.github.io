@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alison Fanning</title>
+		<meta name="description" content="Alison Fanning's Portfolio">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/initialize.css">
+    	<link rel="stylesheet" type="text/css" href="../css/grid.css">
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+	</head>
+	<body class="projectPage">
+		<header>
+			<h4 class="logo"><a href="../index.html">Alison Fanning</a></h4>
+			<nav>
+				<ul>
+					<li><a href="../hapyak/index.html">&#60; Previous Case Study</a></li>
+					<li><a href="../registration/index.html">Next Case Study &#62; </a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="projectPageTitle">
+			<img src="images/dancers.png" alt="HapYak Logo">
+			<h1>Dance Event App</h1>
+		</section>
+		<section>
+			<p>West Coast Swing, Lindy Hop, Argentine Tango and other social dance forms have numerous annual events, workshop weekends and camps throughout the year. If you are willing to travel, you can go to an event every weekend. In order to learn about events, see the schedule, instructor and DJ list, and get hotel and travel information you have to visit each individual event website.</p>
+		</section>
+		<section>
+			<h2>The Idea</h2>
+			<p>Create an app that consolidates information for all of the annual events in one place. In addition to making it easier to find information and learn about new events, the app could also allow users to see who would be there, coordinate travel and housing, and maintain a personal event calendar.</p>
+		</section>
+		<section>
+			<h2>The Approach</h2>
+			<img class="image" src="images/designapproach.jpg" alt="App Design Approach Diagram">
+			<h3>User Research</h3>
+			<p>I spoke with a variety of social dancers to get their feedback on the app and understand what features they would find most useful. I also asked them what information would be important to include about each event to help them determine if they wanted to attend. Here were my findings:</p>
+			<ol>
+				<li>Dancers were excited about the idea and affirmed the need for a central resource.</li>
+				<li>There was less interest in the social or personalization components of the app.</li>
+				<li>They wanted to search and filter based on a lot of specific information about each event in order to determine if they wanted to attend.</li>
+			</ol>
+			<h3>Competitive Analysis</h3>
+			<p>I reviewed numerous dance event websites and several websites that attempt to compile local and national events. Here were my takeaways:</p>
+			<ol>
+				<li>The websites that compile event information just list events based on location or date and don't have search and filter functionality.</li>
+				<li>You have to actually look at the event websites to get any detailed information about the event (cost, instructors, etc.).</li>
+				<li>The event websites themselves contain a lot of useful information that it didn't make sense to duplicate in the app.</li>
+			</ol>
+			<h3>Results</h3>
+			<p>Based on my research I realized the following:</p>
+			<ol>
+				<li>I needed to focus on one dance form -  I chose West Coast Swing.</li>
+				<li>The real value add of the app would be the search and filtering components; people have other resources to handle the other aspects of the process.</li>
+				<li>For each event I would need to focus on the important data points that users wanted to search and filter on rather than try to replicate all information from the event website.</li>
+			</ol>
+			<h3>Brainstorming</h3>
+			<p>I started by sketching different ways to represent the data within the app.</p>
+			<div class="sketches">
+				<div class="row">
+					<div class="column one-half">
+					<img src="images/sketch1.jpg" alt="Sketch 1">
+					</div>
+					<div class="column one-half">
+					<img src="images/sketch2.jpg" alt="Sketch 2">
+					</div>
+				</div>
+			</div>
+			<h3>Wireframing</h3>
+			<p>I settled on the design that I believed would be most user-friendly and built a series of wireframes of the screens.</p>
+			<div class="wireframes">
+				<div class="row">
+					<div class="column one-third">
+						<img src="images/events.png" alt="Event Main Page Wireframe">
+					</div>
+					<div class="column one-third">
+						<img src="images/eventdetails.png" alt="Event Details Page Wireframe">
+					</div>
+					<div class="column one-third">
+						<img src="images/eventfilter.png" alt="Event Filter Wireframe">
+					</div>
+				</div>
+				<div class="row">
+					<div class="column one-third">
+						<img src="images/eventcalendarfilter.png" alt="Event Date Filter Wireframe">
+					</div>
+					<div class="column one-third">
+						<img src="images/map.png" alt="Map Wireframe">
+					</div>
+					<div class="column one-third">
+						<img src="images/mapdetails.png" alt="Map Details Wireframe">
+					</div>
+				</div>
+			</div>
+			<h3>User Testing</h3>
+			<p>I took my interactive wireframes to users and asked them to complete a series of tasks:</p>
+			<ol>
+				<li>Find pricing for the Summer Hummer event.</li>
+				<li>Add an event to your calendar.</li>
+				<li>Find two events near you.</li>
+				<li>Find a WSDC registered event.</li>
+			</ol>
+			<p>Once the user had a chance to navigate around the app I also asked them to provide feedback on usability of the app and the information included for each event.</p>
+			<h3>Results</h3>
+			<p>Here are the takeaways from my user testing:</p>
+			<ol>
+				<li>Most users didn't understand the filter icon used.</li>
+				<li>The word "comps" was confusing and the full word "competitions" should be used.</li>
+				<li>The location of the pricing and more info buttons should be switched.</li>
+				<li>The event types should be changed to workshops, events, camps.</li>
+				<li>It was confusing having both "cancel" and "x" options to close windows. This functionality should be streamlined and placement should be consistent.</li>
+				<li>Rather than flipping between the map and list icons on the top nav bar, the icons should always exist and the one in use should be highlighted.</li>
+				<li>It would be good to add the ability to share an event via Facebook or email.</li>
+				<li>It would be nice to add event accessibility information so it's easy for dancers to see what travel arrangements will need to be made.</li>
+			</ol>
+			<h3>Iterating</h3>
+			<p class="final">I will be creating a new prototype version of the app that incorporates the feedback from user testing.</p>
+		</section>
+		<footer>
+			<hr>
+			<h2>Like what you see?</h2>
+			<div class="contact">
+				<div class="button"><a href="mailto:alison.fanning@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>     Send me an Email</a></div>
+			</div>
+		</footer>
+	</body>
+</html>
