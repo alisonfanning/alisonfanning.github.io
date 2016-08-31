@@ -18,29 +18,22 @@ body {
 .header h2 {
 	margin-top: 80px;
 	margin-bottom: 80px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	font-size: 40px;
 	text-align: center;
-}
-
-.contact {
-	text-align: center;
+	font-weight: 400;
 }
 
 .contact .button {
 	display: inline-block;
 	background-color: #FEFEFE;
-	border-radius: 12%;
 	color: black;
 	padding: 10px 20px;
 	text-align: center;
 	font-size: 15px;
 	text-transform: capitalize;
-	font-weight: bold;
+	font-weight: 500;
 	margin: 20px;
-	border: 1px solid #6a6a6a;
-	box-shadow: 3px 3px 5px #6a6a6a;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 }
 
 .contact .button a {
@@ -49,7 +42,7 @@ body {
 }
 
 .contact .button:hover {
-	box-shadow: 3px 3px 5px black;
+	box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
 }
 
 /*HOMEPAGE*/
@@ -72,6 +65,8 @@ body {
 
 #landing header .logo {
 	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: 'Averia Sans Libre', sans-serif;
 	color: #CDD1D5;
 	position: fixed;
 	top: 0px;
@@ -80,18 +75,18 @@ body {
 	margin: 0;
 	z-index: 11;
 	line-height: 50px;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 @media (max-width: 570px) {
 	#landing header .logo {
-		line-height: 75px;
+		line-height: 100px;
 	}
 }
 
 #landing nav {
 	text-align: right;
-	font-size: 20px;
+	font-size: 18px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -99,12 +94,13 @@ body {
 	height: 50px;
 	z-index: 10;
 	width: 100%;
+	font-weight: 400;
 }
 
 @media (max-width: 570px) {
 	#landing nav {
 		font-size: 16px;
-		height: 75px;
+		height: 100px;
 	}	
 }
 
@@ -126,13 +122,15 @@ body {
 #landing li {
 	display: inline-block;
 	text-align: right;
-	padding: 10px;
+	padding-right: 20px;
+	line-height: 50px
 }
 
 @media (max-width: 570px) {
 	#landing li {
 		display: block;
 		padding: 0;
+		line-height: 30px;
 	}	
 }
 
@@ -267,25 +265,19 @@ body {
 
 .project .imgWrap {
 	position: relative;
-	box-shadow: 4px 4px 5px #d3d3d3;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.3);
 }
 
 .project .imgTitleWrap {
 	background: white;
 	opacity: .8;
 	position: absolute;
-	top: 20%;
+	top: 35%;
 	left: 0;
 	right: 0;
-	margin: 40px;
-	border-radius: 20px;
-}
-
-@media (max-width: 680px) {
-	.project .imgTitleWrap {
-		position: absolute;
-		top: 10%;
-	}
+	margin-left: 40px;
+	margin-right: 40px;
+	padding: 5px;
 }
 
 .project .imgWrap:hover img {
@@ -295,7 +287,6 @@ body {
 .project .imgWrap:hover .disabled {
 	opacity: 1;
 }
-
 
 /*ABOUT STYLES*/
 
@@ -307,19 +298,27 @@ body {
 	line-height: 1.5;
 	padding-bottom: 150px;
 	display: inline-block;
+	position: relative;
+	top: 50px;
 }
 
 #about .row {
-	text-align: center;
-	
+	margin: 90px;
+}
+
+@media (max-width: 966px) {
+	#about .row {
+		text-align: center;
+		margin: 20px;
+		padding: 0;
+	}
 }
 
 #about img {
 	display: block;
 	margin: auto;
-	border-radius: 20px;
-	height: 250px;
-	width: 250px;
+	height: 223px;
+	width: 223px;
 }
 
 @media (max-width: 768px) {
@@ -335,10 +334,15 @@ body {
 	padding: 0px 0px 0px 30px;
 }
 
+@media (max-width: 768px) {
+	#about p {
+		padding: 0;
+	}
+}
+
 #about .bio {
 	display: inline-block;
-	box-shadow: 3px 3px 5px #6a6a6a;
-	border-radius: 20px;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.3);
 	vertical-align: top;
 	margin-bottom: 30px;
 }
@@ -350,8 +354,24 @@ body {
 	vertical-align: top;
 }
 
+#about .contact .button {
+	margin-left: 30px;
+	margin-right: 0;
+	width: 200px;
+}
 
- 
+@media (max-width: 483px) {
+	#about .contact .button {
+		margin-left: 0;
+	}
+}
+
+ @media (max-width: 543px) {
+ 	#about .bioText .contact {
+ 		text-align: center;
+ 	}
+ }
+
 /*CASESTUDY PAGES*/
 /*BODY STYLES*/
 
@@ -370,6 +390,8 @@ body {
 
 .projectPage header .logo {
 	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: 'Averia Sans Libre', sans-serif;
 	color: #CDD1D5;
 	position: fixed;
 	top: 0px;
@@ -487,8 +509,8 @@ body {
 	width: 100%;
 	margin-bottom: 40px;
 	margin-top: 40px;
-	border: 2px solid #d3d3d3;
-	box-shadow: 3px 3px 5px #d3d3d3;
+	border: 1px solid #d3d3d3;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.3);
 }
 
 /*EVENT APP PAGE STYLES*/
@@ -521,4 +543,8 @@ body {
 }
 .projectPage footer h2 {
 	margin-top: 60px;
+}
+
+.projectPage footer .button {
+	border: 1px solid #d3d3d3;
 }
